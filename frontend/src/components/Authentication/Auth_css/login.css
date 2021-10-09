@@ -1,0 +1,105 @@
+.login_page {
+  width: 100%;
+  margin: 4rem 0;
+  padding: 2rem 1rem;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.login_header p {
+  margin-left: 1.5rem;
+  font-size: 1.25rem;
+}
+
+#login_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#login_form input[type="text"] {
+  padding: 0.8rem;
+  margin: 0.9rem 1.5rem;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 3px;
+  outline: none;
+  color: black;
+}
+
+#login_form input[type="password"] {
+  padding: 0.8rem;
+  margin: 0.9rem 1.5rem;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 3px;
+  outline: none;
+  color: black;
+}
+
+#login_form input[type="submit"] {
+  text-transform: uppercase;
+  padding: 0.8rem;
+  margin: 0.8rem 1.5rem;
+  background-color: rgba(255, 30, 0, 0.397);
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.recovery {
+  margin: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0;
+}
+
+.recovery p {
+  margin: 0;
+}
+
+.recovery p a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #5050ff;
+}
+
+.login_or {
+  position: relative;
+  margin-top: 25px;
+}
+
+.login_or .login_line_divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 88%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: #c4c4c4;
+}
+
+.login_or p {
+  position: absolute;
+  background-color: white;
+  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  padding: 4px;
+  color: gray;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=login.css.map */

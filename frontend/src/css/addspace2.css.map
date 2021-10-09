@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,gBAAgB,EAAE,OAAgB;CAOrC;;AAZD,AAOI,YAPQ,CAOR,EAAE,CAAC;EACC,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;CAEf",
+    "sources": [
+        "addspace2.scss"
+    ],
+    "names": [],
+    "file": "addspace2.css"
+}

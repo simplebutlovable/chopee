@@ -1,0 +1,146 @@
+
+
+
+.signup_page{
+    width: 100%;
+    margin: 5rem 0;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.signup_header{
+    margin-left: 1.5rem;
+    font-size: 1.25rem;
+}
+
+#signup_form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    input{
+        &[type="text"] {
+            padding: 0.8rem;
+            margin: 0.9rem 1.5rem;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+            outline: none;
+            color: black;
+               
+        }
+        &[type="submit"]{
+            text-transform: uppercase;
+            padding: 0.8rem;
+            margin: 0.8rem 1.5rem;
+            background-color: rgba(255, 30, 0, 0.397);
+            border: none;
+            color: white;
+            font-size: 0.9rem;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }     
+}
+
+.or{
+    position: relative;
+    .line_divider{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 88%;
+        transform: translate(-50%,-50%);
+        height: 2px;
+        background-color: rgb(196, 196, 196);
+    }
+    p{
+        position: absolute;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        padding: 4px;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.login_options{
+    width: 90%;
+    margin: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        width: 140px;
+        background-color: blue;
+        border-radius: 3px;
+        .img_wrapper{
+            width: 36px;
+            height: 36px;
+        
+            img{
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 22px;
+            }
+        }
+        p{ 
+            margin:auto;
+            font-weight: medium;  
+        }
+       
+    }
+}
+
+.signup_terms{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#google_logo{
+    width: 90%;
+    height: 90%;
+}
+
+#fb_c{
+    background-color: #1877f2;
+}
+
+#google_c{
+    background-color: #4285f4;
+}
+
+#apple_c{
+    background-color: black;
+}
+
+
+.signup_terms{
+    color: gray;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    #terms{
+        font-size: small;
+        a{
+            text-decoration: none;
+            color: #ee4d2d;
+        }
+    }
+   
+}
+.login{
+    color: gray;
+    margin: 20px 0;
+    font-size: 0.85rem;
+    text-align: center;
+
+    a{  
+        color: #ee4d2d;
+        text-decoration: none;
+    }
+}

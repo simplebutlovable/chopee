@@ -1,0 +1,50 @@
+.auth_nav{
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.auth_header_wrapper{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chopee_logo_holder{
+    img{
+        max-width: 170px;
+    }
+}
+
+.auth_help{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: #ee4d2d;
+    }
+}
+
+.page_body_wrapper{
+    width: 100%;
+    background-color: #ee4d2d;  
+}
+
+.page_body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(100vh - 77px);  
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.sale_banner{
+    img{
+        max-height: calc(100vh - 77px) ;
+    }
+}

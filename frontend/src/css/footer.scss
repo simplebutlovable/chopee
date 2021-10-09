@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    top: auto;
+
+    .subfooter {
+        padding-top: 2.5rem;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        .custumer-service {
+            p {
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 1rem;
+                color: rgb(75, 75, 75);
+                font-size: 0.75rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin: 0.4rem 0;
+
+                    a {
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.603);
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .about-chopee {
+            @extend .custumer-service;
+        }
+
+        .payment {
+            p {
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 1rem;
+                color: rgb(75, 75, 75);
+                font-size: 0.75rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .payments-slot {
+                width: 100px;
+                height: 200px;
+                background-color: chocolate;
+            }
+        }
+
+        .follow {
+            .follow-title {
+                p {
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 1rem;
+                color: rgb(75, 75, 75);
+                font-size: 0.75rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                }
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    a {
+                        display: flex;
+                        text-decoration: none; 
+                        color: rgb(75, 75, 75);
+                        font-size: 0.8rem;
+                        margin: 1rem 0;
+                        img{
+                            width: 15px;
+                            margin: 0 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .chopee-download{
+           
+            p {
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 1rem;
+                color: rgb(75, 75, 75);
+                font-size: 0.75rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .download-grid{
+                display: flex;
+                .qrcode{
+                    width: 80px;
+                    height: 80px;
+                    background-color: chocolate;
+                }
+                .stores{
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto 0.5rem;
+                    img{
+                        margin: 0.3rem 0;
+                        width: 100px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .footer-separator{
+        margin: 1rem auto;
+        width: 90%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.13);
+    }
+    .main-footer{
+        width: 90%;
+        margin: 2.5rem auto;
+        .left-footer{
+            display: flex;
+            p{
+                font-size: 0.8rem;
+                color: rgba(0, 0, 0, 0.678);
+                font-weight: 500;
+                margin: 0 0.3rem;
+            }
+        }
+    }
+}

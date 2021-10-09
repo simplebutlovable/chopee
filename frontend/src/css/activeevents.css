@@ -1,0 +1,14 @@
+.active-events {
+  margin: 1.5rem 0;
+  width: 90%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.active-events p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/*# sourceMappingURL=activeevents.css.map */
