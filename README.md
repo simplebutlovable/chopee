@@ -6,8 +6,8 @@ to mimic Shopee functions. <br/>
 
 NOTE: <br/>
 This is for educational purpose only. Cloning this repo and disguise as offical "Shopee" page
-to gather sensitive information is against the law.The author is not held liable for such mishaps.
-All the data processed in this site "Shopee" is encrypted and secured. <br/><br/>
+to gather sensitive information is against the law.The author is not held liable for this matter.
+All the data processed in this site "Chopee" is encrypted and secured. <br/><br/>
 
 
 
