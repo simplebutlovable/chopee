@@ -22,20 +22,25 @@ DROP TABLE IF EXISTS `chopee_address`;
 
 CREATE TABLE `chopee_address` (
   `address_id` int(11) NOT NULL AUTO_INCREMENT,
-  `country_code` char(10) NOT NULL,
-  `provice_code` char(10) NOT NULL,
-  `town_code` char(10) NOT NULL,
-  `brgy_code` char(10) NOT NULL,
-  `street` varchar(50) NOT NULL,
-  `default_address` int(11) NOT NULL DEFAULT '1' COMMENT '0 = not default; 1 = default',
+  `country_code` char(4) NOT NULL,
+  `province_code` int(11) NOT NULL,
+  `town_code` int(11) NOT NULL,
+  `brgy_code` int(11) NOT NULL,
+  `street` varchar(100) NOT NULL,
+  `is_default` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`address_id`),
-  KEY `province_name` (`provice_code`),
-  KEY `town_name` (`town_code`),
-  KEY `barangay_name` (`brgy_code`),
-  CONSTRAINT `barangay_name` FOREIGN KEY (`brgy_code`) REFERENCES `address_list_ph`.`refbrgy` (`id`) ON UPDATE CASCADE,
-  CONSTRAINT `province_name` FOREIGN KEY (`provice_code`) REFERENCES `address_list_ph`.`refprovince` (`id`) ON UPDATE CASCADE,
-  CONSTRAINT `town_name` FOREIGN KEY (`town_code`) REFERENCES `address_list_ph`.`refcitymun` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `town` (`town_code`),
+  KEY `province` (`province_code`),
+  KEY `barangay` (`brgy_code`),
+  CONSTRAINT `barangay` FOREIGN KEY (`brgy_code`) REFERENCES `address_list_ph`.`refbrgy` (`brgyCode`),
+  CONSTRAINT `province` FOREIGN KEY (`province_code`) REFERENCES `address_list_ph`.`refprovince` (`provCode`),
+  CONSTRAINT `town` FOREIGN KEY (`town_code`) REFERENCES `address_list_ph`.`refcitymun` (`citymunCode`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+/*Data for the table `chopee_address` */
+
+insert  into `chopee_address`(`address_id`,`country_code`,`province_code`,`town_code`,`brgy_code`,`street`,`is_default`) values 
+(1,'PH01',354,12804,12802004,'block 1',1);
 
 /*Table structure for table `profile_pictures` */
 
@@ -53,6 +58,8 @@ CREATE TABLE `profile_pictures` (
   `cover_updated` date DEFAULT NULL,
   PRIMARY KEY (`profile_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+/*Data for the table `profile_pictures` */
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
