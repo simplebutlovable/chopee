@@ -1,0 +1,204 @@
+/*PAGE HEADER*/
+
+.authNav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.authHeaderWrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chopeeLogoHolder {
+    a {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .siteLogo {
+        width: 170px;
+        height: 50px;
+    }
+
+    h3 {
+        color: rgb(46, 46, 46);
+    }
+}
+
+.authHelp {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #ee4d2d;
+    }
+}
+
+.pageBodyWrapper {
+    width: 100%;
+    background-color: #ee4d2d;
+}
+
+.pageBody {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+// .saleBanner {
+//     max-height: calc(100vh - 77px);
+// }
+
+/*END OF PAGE HEADER*/
+.loginPage {
+    margin: 5rem 0;
+    width: 450px;
+    height: 100%;
+    // margin: 0;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.loginHeader {
+    p {
+        margin-left: 1.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        &[type="text"] {
+            padding: 0.8rem;
+            margin: 0.9rem 1.5rem;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+            outline: none;
+            color: black;
+
+        }
+
+        &[type="password"] {
+            padding: 0.8rem;
+            margin: 0.9rem 1.5rem;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+            outline: none;
+            color: black;
+        }
+
+        &[type="submit"] {
+            text-transform: uppercase;
+            padding: 0.8rem;
+            margin: 0.8rem 1.5rem;
+            background-color: rgba(255, 30, 0, 0.397);
+            border: none;
+            color: white;
+            font-size: 0.9rem;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }
+}
+
+.recovery {
+    margin: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+
+    p {
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            font-size: 0.875rem;
+            color: rgb(80, 80, 255);
+        }
+    }
+}
+
+.loginOr {
+    position: relative;
+    margin-top: 25px;
+
+    .loginLineDivider {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 88%;
+        transform: translate(-50%, -50%);
+        height: 2px;
+        background-color: rgb(196, 196, 196);
+    }
+
+    p {
+        position: absolute;
+        background-color: white;
+        font-size: 16px;
+        top: 50%;
+        left: 50%;
+        padding: 4px;
+        color: gray;
+        margin: 0;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.loginOptions {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fbC,
+.appleC,
+.googleC {
+    padding: 0.5rem 1rem;
+
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .imgWrapper {
+        width: 25px;
+        height: 25px;
+    }
+
+    p {
+        color: white;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+.fbC {
+    background-color: blue;
+}
+
+.googleC {
+    background-color: rgb(20, 164, 247);
+}
+
+.appleC {
+    background-color: black;
+}
