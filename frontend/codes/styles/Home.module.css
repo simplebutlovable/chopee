@@ -1,0 +1,74 @@
+.addSpace {
+  width: 90%;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 5px;
+}
+
+.addSpaceOneBlockOne {
+  grid-column: 1/5;
+  grid-row: 1/3;
+  background-color: orange;
+}
+
+.addSpaceOneBlockTwo {
+  grid-column: 5/7;
+
+  background-color: rgb(11, 157, 214);
+}
+
+.addSpaceOneBlockThree {
+  grid-column: 5/7;
+  background-color: rgb(2, 143, 65);
+}
+
+.addSpaceOneBlockOne,
+.addSpaceOneBlockTwo,
+.addSpaceOneBlockThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.eventsList {
+  width: 90%;
+  height: 100px;
+  margin: .5rem auto;
+  background-color: green;
+}
+
+.fullSizeBanner {
+  width: 90%;
+  height: 100px;
+  margin: .5rem auto;
+  background-color: rgb(54, 34, 168);
+  position: relative;
+  z-index: -1;
+}
+
+.bannerImage {
+  text-align: center;
+
+}
+
+.bannerImage p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+}
+
+.exclusiveDeals {
+  width: 90%;
+  height: 400px;
+  margin: 0.5rem auto;
+  background-color: yellowgreen;
+}
