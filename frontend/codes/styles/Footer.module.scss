@@ -86,7 +86,11 @@
                         text-decoration: none;
                         color: rgb(75, 75, 75);
                         font-size: 0.8rem;
-                        margin: 1rem 0;
+                        margin: 0;
+
+                        p {
+                            margin: 0.5rem 0;
+                        }
                     }
                 }
             }

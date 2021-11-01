@@ -7,6 +7,7 @@ import Image from 'next/image'
 
 const Login = () => {
     return (<>
+
         <Head>
             <title>Chopee | Login</title>
         </Head>
@@ -35,8 +36,8 @@ const Login = () => {
             <div className={style.pageBodyWrapper}>
                 <div className={style.pageBody}>
                     {/* <div className={style.saleBanner}>
-                        <Image src="/11-11_sale.png" width={1024} height={600} />
-                    </div> */}
+                    <Image src="/11-11_sale.png" width={1024} height={600} />
+                </div> */}
 
                     <div className={style.loginPage}>
                         <div className={style.loginHeader}>
@@ -44,12 +45,16 @@ const Login = () => {
                             <form id="login_form" className={style.loginForm}>
                                 <input type="text" name="username" id="username" placeholder="Username" />
                                 <input type="password" name="password" id="password" placeholder="Password" />
-                                <input type="submit" value="Login" id="login" />
+                                <input type="submit" value="Login" id="login" disabled />
                             </form>
 
                             <div className={style.recovery}>
-                                <p><Link href="#"><a>Forget Password</a></Link></p>
-                                <p><Link href="#"><a>Login with SMS</a></Link></p>
+                                <p>
+                                    <Link href="#"><a>Forget Password</a></Link>
+                                </p>
+                                <p>
+                                    <Link href="#"><a>Login with SMS</a></Link>
+                                </p>
                             </div>
 
                             <div className={style.loginOr}>
@@ -91,6 +96,11 @@ const Login = () => {
                                     </Link>
 
                                 </div>
+                            </div>
+                            <div className={style.signupLink}>
+                                <p>New to Chopee?&nbsp;
+                                    <Link href="/auth/signup"><a>Sign up</a></Link>
+                                </p>
                             </div>
                         </div>
                     </div>

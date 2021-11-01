@@ -76,6 +76,21 @@
         margin-left: 1.5rem;
         font-size: 1.25rem;
     }
+
+    .signupLink {
+        text-align: center;
+
+        p {
+            color: rgb(153, 153, 153);
+            font-size: 0.9rem;
+
+            a {
+                font-weight: bold;
+                color: rgb(255, 17, 0);
+            }
+        }
+    }
+
 }
 
 .loginForm {
@@ -163,15 +178,19 @@
 }
 
 .loginOptions {
-    margin-top: 4rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 3rem;
 }
 
 .fbC,
 .appleC,
 .googleC {
-    padding: 0.5rem 1rem;
+    width: 30%;
+    padding: .3rem 0.5rem;
+    border-radius: 3px;
 
     a {
         display: flex;
@@ -180,13 +199,13 @@
     }
 
     .imgWrapper {
-        width: 25px;
-        height: 25px;
+        width: 23px;
+        height: 23px;
     }
 
     p {
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin: 0;
     }
 }
@@ -197,8 +216,16 @@
 
 .googleC {
     background-color: rgb(20, 164, 247);
+
+    p {
+        margin-right: 0.5rem;
+    }
 }
 
 .appleC {
     background-color: black;
+
+    p {
+        margin-right: 1rem;
+    }
 }

@@ -59,9 +59,9 @@ const Header = () => {
                             </li>
                             <li>
                                 <div id="authenticate" className={style.authenticate}>
-                                    <Link href="#"><a id="signup">Sign Up</a></Link>
+                                    <Link href="/auth/signup"><a id="signup">Sign Up</a></Link>
                                     <p>|</p>
-                                    <Link href="#"><a id="login">Login</a></Link>
+                                    <Link href="/auth/login"><a id="login">Login</a></Link>
                                 </div>
                             </li>
                         </ul>
